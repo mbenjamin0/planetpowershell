@@ -1,9 +1,9 @@
+using Firehose.Web.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel.Syndication;
 using System.Web;
-using Firehose.Web.Infrastructure;
 
 namespace Firehose.Web.Authors
 {
@@ -13,9 +13,8 @@ namespace Firehose.Web.Authors
         public string LastName => "Setash";
         public string ShortBioOrTagLine => "Infrastructure and DevOps Engineer. Lots of working with Chef, and PowerShell DSC";
         public string StateOrRegion => "Arnold, MD";
-        public string EmailAddress => "francis@i-py.com";
         public string TwitterHandle => "";
-        public string GravatarHash => "";
+        public string GravatarHash => "0959b63fb022ccbc7eb47ad472ed5dad";
 
         public Uri WebSite => new Uri("https://i-py.com/");
 
@@ -32,5 +31,6 @@ namespace Firehose.Web.Authors
         }
 
         public GeoPosition Position => new GeoPosition(39.0589050,-76.49100906);
+        public string FeedLanguageCode => "en";
     }
 }
